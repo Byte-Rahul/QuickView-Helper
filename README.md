@@ -46,7 +46,7 @@ The extension includes error handling for network connectivity issues and failed
    ```
 2. Give the directory owner permissions:
    ```
-   sudo chown -R username:username ta113/
+   sudo chown -R username:username QuickView-Helper/
    ```
 3. Install Dependencies:
    ```
