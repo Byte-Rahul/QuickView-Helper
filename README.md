@@ -121,7 +121,7 @@ The extension includes error handling for network connectivity issues and failed
 
 ### Demo
 
-<iframe width="560" height="315" src="https://drive.google.com/file/d/1UUq3L-VT9KsKyfW6d2dLqS2RXrzQyphW/view?usp=drive_link" frameborder="0" allowfullscreen></iframe>
+[Demo Video](https://drive.google.com/file/d/1UUq3L-VT9KsKyfW6d2dLqS2RXrzQyphW/view?usp=sharing)
 
 **Note:** Please ensure that the APIs you are using are properly configured and accessible if API keys are expired get your own new API keys.
 
