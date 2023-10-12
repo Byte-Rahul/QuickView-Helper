@@ -1,3 +1,4 @@
+//Function to handle summary 
 export async function fetchData(payload) {
     try {
       const response = await fetch('http://localhost:3000/summarize', {
@@ -26,8 +27,10 @@ export async function fetchData(payload) {
     }
   }
 
+// Function to handle translation
   export async function translateText(text) {
     try {
+      console.log(text,'text')
       const response = await fetch('http://localhost:3000/translate', {
         method: 'POST',
         headers: {
@@ -50,4 +53,15 @@ export async function fetchData(payload) {
       // Throw a custom error or return an error response
       return error.message
     }
-  }
+}
+
+// Function to handle actions according to metthod
+export async function actionHandler (payload) {
+    let data;
+    if(payload.method === 'summarize'){
+      data = await fetchData(payload)
+    } else if(payload.method === 'translate'){
+      data = await translateText(payload.content);
+    }
+    return data
+}
